@@ -1,6 +1,8 @@
+import PropTypes from 'prop-types';
+
 const Blog = ({blog,handleAddToBookmark,handleSpentTime}) => {
 
-    const {cover,title,author_img,author,posted_date,reading_time,hashtags} = blog;
+    const {id,cover,title,author_img,author,posted_date,reading_time,hashtags} = blog;
 
 
     return (
@@ -22,7 +24,7 @@ const Blog = ({blog,handleAddToBookmark,handleSpentTime}) => {
                     
                     <div className="flex items-center gap-2">
                         <p>{reading_time} Min Read</p>
-                        <button onClick={()=>handleAddToBookmark(blog)}><i class="fa-regular fa-bookmark"></i></button>
+                        <button onClick={()=>handleAddToBookmark(blog)}><i className="fa-regular fa-bookmark"></i></button>
                     </div>
 
                 </div>
@@ -35,11 +37,18 @@ const Blog = ({blog,handleAddToBookmark,handleSpentTime}) => {
                     }
                 </div>
                 
-                <button onClick={() => handleSpentTime(reading_time)} className="underline text-[#6047EC] font-semibold text-xl">Mark As Read</button>
+                <button onClick={() => handleSpentTime(id,reading_time)} className="underline text-[#6047EC] font-semibold text-xl">Mark As Read</button>
 
             </div>
         </div>
     );
 };
+
+
+Blog.propTypes = {
+    handleSpentTime : PropTypes.func,
+    handleAddToBookmark : PropTypes.func,
+    blog : PropTypes.object
+}
 
 export default Blog;

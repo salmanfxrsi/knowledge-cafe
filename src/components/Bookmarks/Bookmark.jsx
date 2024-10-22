@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 const Bookmark = ({bookmark}) => {
 
     return (
@@ -8,5 +10,9 @@ const Bookmark = ({bookmark}) => {
         </div>
     );
 };
+
+Bookmark.propTypes = {
+    bookmark : PropTypes.object
+}
 
 export default Bookmark;
