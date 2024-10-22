@@ -1,6 +1,6 @@
 # Knowledge Cafe
 
-It is a blogs site where people able to loged in and post different types of blog.By using this web application anyone can easily gather idea from differnet topic by reading blog.It has also many special functionality.
+It is a blogs site where people able to log in and post different types of blog.By using this web application anyone can easily gather idea from different topic by reading blog.It has also many special functionality.
 
 
 ## 6 Key Features Of The Project
