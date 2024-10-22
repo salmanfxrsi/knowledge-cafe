@@ -1,8 +1,18 @@
-# React + Vite
+# Knowledge Cafe
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+It is a blogs site where people able to loged in and post different types of blog.By using this web application anyone can easily gather idea from differnet topic by reading blog.It has also many special functionality.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 6 Key Features Of The Project
+
+ - Used React 
+ - Project is fully Dynamic
+ - There are amazing Navbar
+ - Nice Blog Section
+ - Bookmark Function
+ - Analisise Spent Time
+
+
+## 🔗Live Links Netlify
+https://knowledge-cafe-syl.netlify.app/
+
