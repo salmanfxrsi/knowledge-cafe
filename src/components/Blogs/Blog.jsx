@@ -1,6 +1,6 @@
-const Blog = ({blog}) => {
+const Blog = ({blog,handleAddToBookmark,handleSpentTime}) => {
 
-    const {id,cover,title,author_img,author,posted_date,reading_time,hashtags} = blog;
+    const {cover,title,author_img,author,posted_date,reading_time,hashtags} = blog;
 
 
     return (
@@ -22,7 +22,7 @@ const Blog = ({blog}) => {
                     
                     <div className="flex items-center gap-2">
                         <p>{reading_time} Min Read</p>
-                        <button><i class="fa-regular fa-bookmark"></i></button>
+                        <button onClick={()=>handleAddToBookmark(blog)}><i class="fa-regular fa-bookmark"></i></button>
                     </div>
 
                 </div>
@@ -35,7 +35,7 @@ const Blog = ({blog}) => {
                     }
                 </div>
                 
-                <button className="underline text-[#6047EC] font-semibold text-xl">Mark As Read</button>
+                <button onClick={() => handleSpentTime(reading_time)} className="underline text-[#6047EC] font-semibold text-xl">Mark As Read</button>
 
             </div>
         </div>
